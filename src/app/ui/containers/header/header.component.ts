@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public logo = 'assets/logo.svg';
+  public title = 'Store';
+  public links = [
+    {
+      label: 'Products',
+      url: '/products'
+    }
+  ];
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
